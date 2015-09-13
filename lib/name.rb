@@ -2,6 +2,7 @@ require_relative 'todo'
 
 
 class Name
+
   nm = Todo.new
 
   puts "What is your name? >"
@@ -11,6 +12,7 @@ class Name
   puts "what task would you like to complete? >"
   tsk = gets.chomp
   nm.task = tsk
+  nm.completed = "no"
 
   nm.save
 
